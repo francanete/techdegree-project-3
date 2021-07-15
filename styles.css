@@ -1,6 +1,8 @@
 /* Global */
 
-
+* {
+    box-sizing: border-box;
+  }
 
 
 
@@ -16,6 +18,7 @@ h1 {
 }
 
 .div.first {
+    background-color: black;
     border: 2.75px solid black;
     margin-top: 30px;
     margin-bottom: -3px;
@@ -25,6 +28,43 @@ h1 {
     border: 1.25px solid black;
 }
 
+label {
+    display: block;
+    text-align: left;
+}
+
+input, select {
+    background: rgba(255,255,255,0.1);
+    border: none;
+    font-size: 16px;
+    height: auto;
+    margin: 10px auto;
+    outline: 0;
+    padding: 10px;
+    width: 100%;
+    background-color: #e8eeef;
+    border-radius: 5px;
+    color: #8a97a0;
+    margin-bottom: 30px;
+}
+
+input[id="zip"] {
+    width: 50%;
+    float: left;
+    margin-bottom: 0;
+}
+
+fieldset {
+    margin-bottom: 30px;
+    border: none;
+}
+
+
+
+/* webkit solution */
+::-webkit-input-placeholder { text-align:right; font-style:oblique; font-size:.9rem; }
+/* mozilla solution */
+input:-moz-placeholder { text-align:right; font-style:oblique; font-size:.9rem; }
 
 
 
