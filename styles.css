@@ -1,0 +1,31 @@
+/* Global */
+
+
+
+
+
+
+/* Sections */
+
+body {
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+.div.first {
+    border: 2.75px solid black;
+    margin-top: 30px;
+    margin-bottom: -3px;
+}
+
+.div.second {
+    border: 1.25px solid black;
+}
+
+
+
+
+/* Media Queries */
