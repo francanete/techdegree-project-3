@@ -5,26 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+
     <title>Document</title>
 </head>
 <body>
     <div class="body-container">
         <header>
             
-
+            
         </header>
 
-        <main>
-            <div>
+        <body>
+            <form action="index.html" method="post">
                 <h1>Signup for our newsletter</h1>
                 <p>Gets the latest news on how your code is doing right in your inbox.</p>
+
                 <hr class="div first">
                 <hr class="div second">
-
-                <fieldset>
+                
+                <fieldset class="contact">
 
                     <legend>Contact Information</legend>
-
                     <label for="name">Full Name</label>
                     <input type="text" id="name" name="user_name" placeholder="Required">
                     <label for="email">Email Address</label>
@@ -44,13 +48,36 @@
                     <label for="zip">Zip Code</label>
                     <input type="text" id="zip" name="user_zip">
 
+
                 </fieldset>
-                <hr class="div second">
+                
 
-                <!--  Next content goes here   -->
+                <hr class="div second third">
+                <fieldset class="newsletter">
 
-            </div>
-        </main>
+                    <legend>Newsletter</legend>
+
+
+                    <label class="legend">Select the newsletters you would like to receive</label>
+                    <input type="checkbox" id="newsletter_html" value="html" name="newsletter_topic"><label for="newsletter_html" class="newsletter_options">HTML News</label><br>
+                    <input type="checkbox" id="newsletter_css" value="css" name="newsletter_topic"><label for="newsletter_css" class="newsletter_options">CSS News</label><br>
+                    <input type="checkbox" id="newsletter_javascript" value="javascript" name="newsletter_topic"><label for="newsletter_javascript" class="newsletter_options">JavaScript News</label>
+
+
+
+                    <label class="legend">Newsletter format</label>
+
+                    <input type="radio" id="format_html" value="html" name="newsletter_format"><label for="format_html" class="newsletter_options">HTML</label><br>
+                    <input type="radio" id="format_plain_text" value="plain text" name="newsletter_format"><label for="format_plain_text" class="newsletter_options">Plain text</label>
+                
+                    <label for="other_topics" class="legend">Other topics you'd like to hear about</label>
+                    <textarea name="topics" id="other_topics" class="text_area"></textarea>
+                </fieldset>
+
+                <button type="submit">Sign Up</button>
+            </form>
+            <p class="footer_text">Copyright The Code Review</p>
+        </body>
         
 
     </div>
