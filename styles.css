@@ -144,7 +144,7 @@ input:focus {
 
 }
 
-/* code from: https://codepen.io/chadsteverson/pen/BypKKR  */
+/* code adapted from: https://codepen.io/chadsteverson/pen/BypKKR  */
 
 input:focus::-webkit-input-placeholder {
     transition: opacity 0.5s 0.5s ease!important;
