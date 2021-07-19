@@ -11,17 +11,22 @@
 
 
 body {
-    color: grey;
+    color: rgb(128, 128, 128);
     font-family: 'Lato', sans-serif;   
     margin:0;
+    background-color: rgb(238, 238, 163);
 }
 
 form {
     margin: 10px auto;
-    padding: 10px 0;
-
-
+    padding: 10px 20px;
+    background-color: #d6d6d6d7;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px 1px rgba(175, 175, 175, 0.397);
 }
+
+
+
 .form-container {
     margin: 10px;
 }
@@ -99,7 +104,7 @@ button {
     font-size: 1.5rem;
     width: 100%;
     text-align: center;
-    margin: auto;
+    margin: 0 auto 20px;
     padding: 20px;
     border-radius: 5px;
 }
@@ -144,12 +149,33 @@ input:focus {
 
 }
 
+textarea:focus {
+    border: 2px solid #263d50;
+}
+
+select:focus {
+    border: 2px solid #263d50;
+}
+
 /* code adapted from: https://codepen.io/chadsteverson/pen/BypKKR  */
 
-input:focus::-webkit-input-placeholder {
+input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
     transition: opacity 0.5s 0.5s ease!important;
     opacity: 0.35;
-    }
+}
+
+
+
+select {
+    transition: background-color 2s ease;
+}
+select:hover {
+    background-color: rgba(121, 167, 121, 0.795);
+}
+  
+  
+
+
 
 
 input:required:invalid {
@@ -171,20 +197,6 @@ fieldset {
 }
 
 
-.form_section {
-    background-color: rgba(245, 245, 245, 0.466);
-    border-radius: 10px;
-    box-shadow: 1px 1px 10px 1px rgba(175, 175, 175, 0.397);
-}
-
-.form_section fieldset {
-    margin-bottom: 30px;
-}
-
-
-
-
-
 
 /* webkit solution */
 ::-webkit-input-placeholder { text-align:right; font-style:oblique; font-size:.9rem; }
@@ -199,4 +211,31 @@ input:-moz-placeholder { text-align:right; font-style:oblique; font-size:.9rem; 
     form {
         max-width: 768px;
     }
+
+    .contact-info {
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+    }
+
+    .contact-info label {
+        width: 25%;
+        margin: 0 auto 20px;
+    }
+
+    .zip {
+        justify-content: flex-start;
+    }
+
+    #zip-label {
+        margin:0;
+        margin-right: -40px;
+    }
+
+    input[id="zip"] {
+        width: 25%;
+        align-items: left;
+        margin:0;
+    }
+
 }
