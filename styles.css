@@ -157,27 +157,15 @@ select:focus {
     border: 2px solid #263d50;
 }
 
-/* code adapted from: https://codepen.io/chadsteverson/pen/BypKKR  */
 
-input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
-    transition: opacity 0.5s 0.5s ease!important;
-    opacity: 0.35;
-}
-
-
-
-select {
+select, input, textarea {
     transition: background-color 2s ease;
 }
-select:hover {
-    background-color: rgba(121, 167, 121, 0.795);
+
+select:hover, input:hover, textarea:hover {
+    background-color: rgba(137, 206, 137, 0.705);
 }
   
-  
-
-
-
-
 input:required:invalid {
     box-shadow: 0 0 4px .5px rgba(255, 0, 0, 0.685);
 }
