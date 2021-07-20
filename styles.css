@@ -163,7 +163,7 @@ select, input, textarea {
 }
 
 select:hover, input:hover, textarea:hover {
-    background-color: rgba(137, 206, 137, 0.705);
+    background-color: #89ce89b4;
 }
   
 input:required:invalid {
@@ -172,6 +172,11 @@ input:required:invalid {
 
 input:required:valid {
     box-shadow: 0 0 4px .5px rgba(47, 212, 69, 0.637);
+}
+
+input[type="checkbox"]:checked + label,
+input[type="radio"]:checked + label {
+    font-weight: 700;
 }
 
 fieldset {
